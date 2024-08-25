@@ -42,5 +42,6 @@ KNN = KNeighborsClassifier(n_neighbors = K)
 KNN.fit(train, train_result)
 
 from sklearn import metrics
+print("K value:",K)
 print("Train set Accuracy: ", metrics.accuracy_score(train_result, KNN.predict(train)))
 print("Test set Accuracy: ", metrics.accuracy_score(test_result, KNN.predict(test)))
